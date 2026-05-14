@@ -1,8 +1,8 @@
 # ESP32MC Server
 
-一个跑在 ESP32 上的极简 Minecraft Java 服务器。
+一个跑在 ESP32S3 上的极简 Minecraft Java 服务器。
 
-项目现在主要面向 Arduino ESP32，协议版本是 `26.1.2 / 775`。核心逻辑基本都还是 C，网络层用一层兼容代码接到 `WiFiServer / WiFiClient` 上。
+项目现在主要面向 Arduino ESP32S3，协议版本是 `26.1.2 / 775`。核心逻辑基本都还是 C，网络层用一层兼容代码接到 `WiFiServer / WiFiClient` 上。
 
 代码部分参考 https://github.com/p2r3/bareiron
 ## 现在有的东西
@@ -23,8 +23,8 @@
 
 大致流程：
 
-1. 用 Arduino IDE 或兼容的 ESP32 构建环境打开这个目录
-2. 选择 ESP32 开发板
+1. 用 Arduino IDE 或兼容的 ESP32S3 构建环境打开这个目录
+2. 选择 ESP32S3 开发板
 3. 编译并烧录
 4. 设备启动后先连 WiFi
 5. 连上以后服务器监听 `25565`
@@ -53,7 +53,7 @@
 
 这个项目优先考虑：
 
-- 在 ESP32 上能跑
+- 在 ESP32S3 上能跑
 - 代码结构尽量直接
 - 出问题时方便查
 
